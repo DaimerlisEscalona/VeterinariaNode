@@ -7,14 +7,6 @@ const registrar = (nombre, edad, animal, color, enfermedad) => {
     citas.push(object);
     fs.writeFileSync('citas.json', JSON.stringify(citas))
 
-    // try {
-    //     fs.writeFileSync('./citas.json', JSON.stringify(citas))
-    //     return null;
-    // } catch (err) {
-    //     console.log(err)
-    //     console.log('No fué posible registrar a tu mascota, intentalo en un momento')
-    // }
-
 }
 
 const leer = () => {
